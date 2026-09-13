@@ -21,7 +21,7 @@ BAUD_RATE = int(os.getenv("BAUD_RATE", "9600"))
 # Render FastAPI WebSocket endpoint
 BACKEND_WS_URL = os.getenv(
     "BACKEND_WS_URL",
-    "wss://your-backend.onrender.com/ws"
+    "wss://engineer-day-2026-backend.onrender.com/ws"
 )
 
 
