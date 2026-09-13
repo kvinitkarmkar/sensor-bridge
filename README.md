@@ -1,10 +1,10 @@
-# ⛏️ Underground Mines Safety System — Sensor Bridge
+# Underground Mines Safety System — Sensor Bridge
 
 > A real-time bridge connecting Arduino-based mining safety sensors to a cloud-hosted FastAPI backend via WebSocket.
 
 ---
 
-## 📡 Architecture
+## Architecture
 
 ```
 Arduino UNO
@@ -28,7 +28,7 @@ Web Dashboard
 https://engineer-day-2026-backend.onrender.com/
 ```
 
-## 🎯 Responsibilities
+## Responsibilities
 
 The Sensor Bridge is responsible for:
 
@@ -39,7 +39,7 @@ The Sensor Bridge is responsible for:
 
 ---
 
-## 📦 Expected Arduino Data Format
+## Expected Arduino Data Format
 
 The Arduino must transmit **one valid JSON object per line**:
 
@@ -67,12 +67,12 @@ The Arduino must transmit **one valid JSON object per line**:
 
 ---
 
-## ⚙️ Installation & Setup
+## Installation & Setup
 
 **1. Clone the repository and navigate to the project folder**
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/kvinitkarmkar/sensor-bridge
 cd sensor-bridge
 ```
 
@@ -106,7 +106,7 @@ Create a `.env` file in the root directory:
 ```env
 ARDUINO_PORT=COM6
 BAUD_RATE=9600
-BACKEND_WS_URL=wss://your-backend.onrender.com/ws
+BACKEND_WS_URL=wss://engineer-day-2026-backend.onrender.com/ws
 SERIAL_TIMEOUT=1
 ```
 
@@ -115,7 +115,7 @@ SERIAL_TIMEOUT=1
 
 ---
 
-## ▶️ Running the Application
+##  Running the Application
 
 ```bash
 python main.py
@@ -129,7 +129,7 @@ python main.py
 ============================================================
 
 [SERIAL] Connected to Arduino on COM6 @ 9600 baud
-[WS] Connected to backend: wss://your-backend.onrender.com/ws
+[WS] Connected to backend: wss://engineer-day-2026-backend.onrender.com/ws
 [SYSTEM] Sensor bridge started.
 [SYSTEM] Waiting for Arduino data...
 
