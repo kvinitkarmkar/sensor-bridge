@@ -104,13 +104,13 @@ pip install -r requirements.txt
 Create a `.env` file in the root directory:
 
 ```env
-ARDUINO_PORT=COM3
+ARDUINO_PORT=COM6
 BAUD_RATE=9600
 BACKEND_WS_URL=wss://your-backend.onrender.com/ws
 SERIAL_TIMEOUT=1
 ```
 
-> 💡 **Note:** Replace `COM3` with the port assigned to your Arduino UNO.
+> 💡 **Note:** Replace `COM6` with the port assigned to your Arduino UNO.
 > On Linux/macOS, use something like `/dev/ttyUSB0` or `/dev/ACM0`.
 
 ---
@@ -128,7 +128,7 @@ python main.py
  Underground Mines Safety System - Sensor Bridge
 ============================================================
 
-[SERIAL] Connected to Arduino on COM3 @ 9600 baud
+[SERIAL] Connected to Arduino on COM6 @ 9600 baud
 [WS] Connected to backend: wss://your-backend.onrender.com/ws
 [SYSTEM] Sensor bridge started.
 [SYSTEM] Waiting for Arduino data...
