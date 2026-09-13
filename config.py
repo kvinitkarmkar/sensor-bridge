@@ -14,7 +14,7 @@ load_dotenv()
 
 
 # Arduino configuration
-ARDUINO_PORT = os.getenv("ARDUINO_PORT", "COM3")
+ARDUINO_PORT = os.getenv("ARDUINO_PORT", "COM6")
 BAUD_RATE = int(os.getenv("BAUD_RATE", "9600"))
 
 
